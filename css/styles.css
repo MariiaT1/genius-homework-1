@@ -1,90 +1,183 @@
-
 @font-face {
-    font-display: swap;
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
-
-}
-
-
-@font-face {
-    font-display: swap; 
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
-
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
 }
 
 :root {
-    --color-primary-light: #2B7FFF;
-    --color-primary-dark: #011C44;
-    --color-brand-white: #FFFFFF;
-    --color-brand-black: #000;
+  --color-primary-light: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-brand-white: #ffffff;
+  --color-text: #000;
+  --color-brand-blue: #011f4a;
+  --color-secondary-dark: #4a4a4a;
+  --color-secondary-grey: #747272;
 }
 
 /* Base */
 body {
-   color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--color-primary-dark);
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+}
+
+.section-title .accent {
+  color: var(--color-primary-light);
+}
+
+.section-title .capitalize,
+.text .capitalize {
+  text-transform: capitalize;
 }
 
 /* Button */
 button {
-    /* display: block; */
-    cursor: pointer;
+  /* display: block; */
+  cursor: pointer;
 }
 
 .button {
-    padding: 16px 32px;
-    color: var(--color-brand-white);
-    background-color: var( --color-primary-light);
-    border-radius: 32px; 
-    border: 2px solid var( --color-primary-light);
+  font-weight: 600;
+  padding: 16px 32px;
+  color: var(--color-brand-white);
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-light);
 }
 
 .button:hover {
-    border: 2px solid var( --color-primary-light);
-    color: var( --color-primary-dark);
-    background-color: transparent;
+  border: 2px solid var(--color-primary-light);
+  color: var(--color-primary-dark);
+  background-color: transparent;
 }
 
 /* Link */
-.link {
-    color: var( --color-primary-dark);
-    text-decoration: none;
-}
-
-.link:hover {
-    color: var( --color-primary-light);
-}
 
 /* Hero section */
 .hero-title {
-    color:  var( --color-primary-light);
+  color: var(--color-primary-light);
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  text-transform: capitalize;
+  /* text-align: left; */
+}
+.hero-section-info {
+  color: var(--color-secondary-dark);
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-.section-title .accent {
-    color: var(--color-primary-light);
+.header-link {
+  color: var(--color-primary-dark);
+}
+
+.header-link:hover {
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+/* About-us section */
+
+.about-us-section p {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+/* Why-we section */
+
+.why-we-section-item {
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+/* Procedures section */
+
+.procedure-title {
+  color: var(--color-brand-white);
+  font-size: 22px;
+  line-height: 1.18;
+  background-color: aqua;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-brand-blue);
+}
+
+.footer-link {
+  font-size: 16px;
+  color: var(--color-brand-white);
+}
+
+.footer-link:hover {
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.address-link {
+  font-size: 16px;
+  color: var(--color-brand-white);
+}
+
+.address-link:hover {
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.address-copyright {
+  font-size: 13px;
+  color: var(--color-secondary-grey);
 }
