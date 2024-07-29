@@ -10,101 +10,137 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav>
-          <a href="/">
-            <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
-          </a>
-          <ul>
-            <li><a class="header-link" href="#about-us-section">Про нас</a></li>
-            <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
-            <li>
-              <a class="header-link" href="#procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li><a class="header-link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <a href="tel:+380960000007"></a>
-        <!-- facebook and instsgrsm-->
+        <div class="header-container">
+          <nav class="nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+            </a>
+            <ul class="menu">
+              <li>
+                <a class="header-link" href="#about-us-section">Про нас</a>
+              </li>
+              <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
+              <li>
+                <a class="header-link" href="#procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="header-link" href="#contact-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+380960000007">12345656</a>
+          <!-- facebook and instsgrsm-->
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <p class="hero-section-text">Косметологічна клініка</p>
-          <h1 class="hero-title" lang="en">beauty <br />zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
-          <p class="hero-section-info">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+          <div class="hero-title-container">
+            <p class="hero-section-text">Косметологічна клініка</p>
+            <h1 class="hero-title" lang="en">beauty <br />zone</h1>
+            <div class="button-section">
+              <button class="button" type="button">Замовити дзвінок</button>
+              <p class="hero-section-info">
+                Запишись та отримай безкоштовну консультацію нашого косметолога
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="about-us-section" class="section about-us-section">
         <div class="container">
-          <h2 class="about-us-title section-title">
-            Перевтілюйтесь в
-            <span class="accent capitalize" lang="en">beauty zone!</span>
-          </h2>
-          <p>
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="text">
-            B <span class="capitalize text-bold" lang="en">beauty zone</span> ми
-            гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-            косметологічні процедури та препарати допоможуть вам підтримувати
-            свою красу та молодість. З нами краса назавжди!
-          </p>
-          <img
-            src="./images/face-before.jpg"
-            alt="Лице до косметологічної процедури"
-          />
-          <img
-            src="./images/face-after.jpg"
-            alt="Лице після косметологічної процедури"
-          />
+          <div class="about-us-container">
+            <div class="about-us-content">
+              <h2 class="about-us-title section-title">
+                Перевтілюйтесь в
+                <span class="accent capitalize" lang="en">beauty zone!</span>
+              </h2>
+              <p>
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="text">
+                B
+                <span class="capitalize text-bold" lang="en">beauty zone</span>
+                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+                косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. З нами краса назавжди!
+              </p>
+            </div>
+            <img
+              class="about-us-image"
+              src="./images/face-before.jpg"
+              alt="Лице до косметологічної процедури"
+            />
+            <img
+              class="about-us-image"
+              src="./images/face-after.jpg"
+              alt="Лице після косметологічної процедури"
+            />
+          </div>
         </div>
       </section>
       <section id="why-we-section" class="section why-we-section">
         <div class="container">
-          <h2 class="why-we-title section-title">
-            Чому люди <span class="accent">обирають нас</span>
+          <h2 class="why-we-title section-title section-title-centered">
+            Чому люди <br />
+            <span class="accent">обирають нас</span>
           </h2>
           <ul class="why-we-section-list">
             <li class="why-we-section-item">
-              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
-              5 років
+              <article>
+                <svg></svg>
+                <p>
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </p>
+              </article>
             </li>
             <li class="why-we-section-item">
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
+              <article>
+                <svg></svg>
+                <p>
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </p>
+              </article>
             </li>
             <li class="why-we-section-item">
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
+              <article>
+                <svg></svg>
+                <p>
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </p>
+              </article>
             </li>
           </ul>
         </div>
       </section>
       <section id="procedures-section" class="section procedures-section">
         <div class="container">
-          <h2 class="procedures-title section-title">
+          <h2 class="procedures-title section-title section-title-centered">
             Наші <span class="accent">процедури</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img src="" alt="" />
                 <h3 class="procedure-title">Маски для обличчя</h3>
               </article>
             </li>
             <li>
               <article>
+                <img src="" alt="" />
                 <h3 class="procedure-title">Ін'єкції для обличчя</h3>
               </article>
             </li>
             <li>
               <article>
+                <img src="" alt="" />
                 <h3 class="procedure-title">Очищення обличчя</h3>
               </article>
             </li>
@@ -113,7 +149,7 @@
       </section>
       <section id="contact-section" class="section contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">
+          <h2 class="contact-title section-title section-title-centered">
             Як нас <span class="accent">знайти</span>
           </h2>
           <iframe
