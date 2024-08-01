@@ -77,6 +77,13 @@ address {
   padding: 0 24px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .section {
   padding: 48px 0;
 }
@@ -197,6 +204,8 @@ button {
 
 .about-us-container {
   display: flex;
+  /* gap: 32px; */
+  align-items: center;
   /* align-items: flex-start;
   justify-content: space-between; */
 }
@@ -219,9 +228,16 @@ button {
 }
 
 .about-us-image {
-  display: block;
   border-radius: 100%;
   box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.2);
+}
+
+.about-us-image-before {
+  margin-bottom: 40px;
+}
+
+.about-us-image-after {
+  padding-left: 164px;
 }
 
 /* Why-we section */
@@ -252,10 +268,16 @@ button {
 }
 
 .why-we-section-item {
-  display: flex;
+  /* display: flex; */
   /* width: 316px; */
+}
+
+.why-we-card {
   color: var(--color-text);
   line-height: 1.3;
+  border-radius: 32px;
+  background-color: var(--color-brand-white);
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
 }
 
 /* Procedures section */
