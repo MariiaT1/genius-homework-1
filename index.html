@@ -95,11 +95,34 @@
               </p>
             </div>
             <div class="about-us-images">
-              <img
-                class="about-us-image about-us-image-before"
-                src="./images/face-before.jpg"
-                alt="Лице до косметологічної процедури"
-              />
+              <div class="about-us-images-transformation-container">
+                <img
+                  class="about-us-image about-us-image-before"
+                  src="./images/face-before.jpg"
+                  alt="Лице до косметологічної процедури"
+                />
+                <svg
+                  class="transformation-star-1 star-animation grow"
+                  width="64"
+                  height="64"
+                >
+                  <use href="./images/icons.svg#icon-Star-1"></use>
+                </svg>
+                <svg
+                  class="transformation-star-2 star-animation grow"
+                  width="40"
+                  height="40"
+                >
+                  <use href="./images/icons.svg#icon-Star-2"></use>
+                </svg>
+                <svg
+                  class="transformation-star-3 star-animation grow"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-Star-3"></use>
+                </svg>
+              </div>
               <img
                 class="about-us-image about-us-image-after"
                 src="./images/face-after.jpg"
@@ -305,5 +328,11 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
   </body>
 </html>

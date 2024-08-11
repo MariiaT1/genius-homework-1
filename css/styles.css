@@ -253,10 +253,7 @@ button {
 
 .about-us-container {
   display: flex;
-  /* gap: 32px; */
-  align-items: center;
-  /* align-items: flex-start;
-  justify-content: space-between; */
+  gap: 32px;
 }
 
 .about-us-content {
@@ -276,6 +273,10 @@ button {
   font-weight: 600;
 }
 
+.about-us-images-transformation-container {
+  position: relative;
+}
+
 .about-us-image {
   border-radius: 100%;
   box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.2);
@@ -285,8 +286,57 @@ button {
   margin-bottom: 40px;
 }
 
+.transformation-star-1 {
+  position: absolute;
+  left: 132px;
+  top: 347px;
+  fill: var(--color-brand-blue);
+}
+
+.transformation-star-2 {
+  position: absolute;
+  right: -26px;
+  top: 40px;
+  fill: var(--color-primary-light);
+}
+
+.transformation-star-3 {
+  position: absolute;
+  right: 6px;
+  top: 272px;
+  fill: var(--color-secondary-grey);
+}
+
+.star-animation {
+  animation-name: spin, grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .about-us-image-after {
-  padding-left: 164px;
+  margin-left: 172px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 20px;
+    height: 20px;
+  }
+
+  to {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* Why-we section */
@@ -463,8 +513,20 @@ button {
 
 /* Footer */
 .footer {
+  position: relative;
   padding: 56px 0;
   background: var(--color-brand-blue);
+}
+
+.footer::after {
+  position: absolute;
+  width: 247px;
+  height: 152px;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/bottels.png');
+  background-repeat: no-repeat;
+  content: '';
 }
 
 .footer-container {
@@ -519,4 +581,24 @@ button {
 .address-copyright {
   font-size: 13px;
   color: var(--color-secondary-grey);
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 31, 74, 0.4);
+}
+
+.modal {
+  width: 720px;
+  height: 680px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
 }
