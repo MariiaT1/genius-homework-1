@@ -66,7 +66,9 @@
             <p class="hero-section-text">Косметологічна клініка</p>
             <h1 class="hero-title" lang="en">beauty <br />zone</h1>
             <div class="button-section">
-              <button class="button" type="button">Замовити дзвінок</button>
+              <button class="button modal-btn-open" type="button">
+                Замовити дзвінок
+              </button>
               <p class="hero-section-info">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
@@ -329,10 +331,18 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-text">
+          Запишіться <span class="accent">безкоштовно</span> та отримайте
+          подарунок
+        </p>
+        <form name="modal-form"></form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
