@@ -136,6 +136,7 @@ button {
   border-radius: 32px;
   border: 2px solid var(--color-primary-light);
   margin-bottom: 14px;
+  transition: border 0.3s, color 0.3s, background-color 0.3s;
 }
 
 .button:hover {
@@ -144,7 +145,7 @@ button {
   background-color: transparent;
 }
 
-/* Link */
+/* Header */
 
 .header {
   position: absolute;
@@ -152,6 +153,7 @@ button {
   left: 0;
   width: 100%;
   padding-top: 32px;
+  padding-bottom: 32px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
 }
@@ -178,6 +180,7 @@ button {
 .header-link {
   color: var(--color-primary-dark);
   display: flex;
+  transition: color 0.3s;
 }
 
 .header-link:hover {
@@ -192,6 +195,7 @@ button {
 
 .address-icon {
   fill: var(--color-brand-blue);
+  transition: fill 0.3s;
 }
 
 .address-icon:hover {
@@ -207,7 +211,8 @@ button {
       rgba(255, 255, 255, 0.193204) 58.65%,
       rgba(255, 255, 255, 0) 72.78%
     ),
-    url(../images/hero-section-bacground.jpg);
+    url('../images/hero-section-bacground.jpg');
+
   /* background: #c4c4c4;
   transform: matrix(1, 0.06, 0.06, -1, 0, 0); */
   background-repeat: no-repeat;
@@ -218,6 +223,7 @@ button {
 
 .hero-title-container {
   padding-left: 180px;
+  padding-top: 16px;
 }
 
 .hero-title {
@@ -308,10 +314,7 @@ button {
 }
 
 .star-animation {
-  animation-name: spin, grow;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: spin 2s infinite linear;
 }
 
 .about-us-image-after {
@@ -319,21 +322,13 @@ button {
 }
 
 @keyframes spin {
-  from {
+  0% {
     transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes grow {
-  from {
     width: 20px;
     height: 20px;
   }
-
-  to {
+  100% {
+    transform: rotate(360deg);
     width: 50px;
     height: 50px;
   }
@@ -343,7 +338,7 @@ button {
 
 .why-we-section {
   padding-top: 176px;
-  background-image: url(../images/background.png);
+  background-image: url('../images/why-we-section-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   /* background-image: linear-gradient(
@@ -384,14 +379,15 @@ button {
 }
 
 .why-we-card-icon {
+  margin-bottom: 8px;
   fill: var(--color-primary-light);
 }
 
 .why-we-card__text {
-  margin-top: 8px;
   margin-bottom: 0;
   text-align: center;
 }
+
 /* Procedures section */
 .procedures-title {
   margin-bottom: 48px;
@@ -409,8 +405,7 @@ button {
   font-size: 22px;
   line-height: 1.18;
   width: 152px;
-  margin: 0 auto;
-  padding-bottom: 32px;
+  margin: 32px auto;
 }
 
 .procedures-section-list {
@@ -446,6 +441,11 @@ button {
   );
   border-radius: 4px 120px;
   overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.procedure-card:hover {
+  transform: scale(1.05);
 }
 
 .procedure-card-image {
@@ -477,6 +477,10 @@ button {
   background-color: var(--color-primary-light);
   border: none;
   fill: var(--color-brand-white);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 /* .slider {
@@ -516,7 +520,7 @@ button {
   position: relative;
   padding: 56px 0;
   background-color: var(--color-primary-dark);
-  background-image: url('../images/background-phooter.png');
+  background-image: url('../images/footer-background.png');
 }
 
 .footer::after {
@@ -591,10 +595,12 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(1, 31, 74, 0.4);
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.hidden {
@@ -606,12 +612,12 @@ button {
 .modal {
   position: relative;
   padding: 42px 144px;
-  width: 720px;
-  height: 680px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  max-height: 720px;
   background-color: var(--color-primary-dark);
-  background-image: url('../images/group.png');
+  background-image: url('../images/modal-background.png');
   border-radius: 48px;
 }
 
