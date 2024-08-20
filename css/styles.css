@@ -480,6 +480,7 @@ button {
   fill: var(--color-primary-dark);
   background-color: transparent;
   border: 1px solid var(--color-primary-dark);
+  transition: background-color 0.3s, border 0.3s, fill 0.3s;
   cursor: pointer;
 }
 
@@ -519,10 +520,40 @@ button {
   border-radius: 32px;
 }
 
+.contact-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-brand-white);
+  text-align: center;
+}
+
+.contact-text .accent {
+  color: var(--color-primary-light);
+}
+
+.contact-section-form {
+  padding: 48px 56px;
+  max-width: 422px;
+  width: 100%;
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/contact-form-bacground.png');
+  border-radius: 32px;
+  border: 4px solid var(--color-brand-blue);
+}
+
 .form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  color: var(--color-secondary-grey);
   font-size: 12px;
   line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
   color: var(--color-secondary-grey);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* Footer */
@@ -564,6 +595,7 @@ button {
 .footer-link {
   font-size: 16px;
   color: var(--color-brand-white);
+  transition: color 0.3s;
 }
 
 .footer-link:hover {
@@ -578,6 +610,7 @@ button {
 .address-link {
   font-size: 16px;
   color: var(--color-brand-white);
+  transition: color 0.3s;
 }
 
 .address-link:hover {
@@ -587,6 +620,7 @@ button {
 
 .address-icon-footer {
   fill: var(--color-brand-white);
+  transition: fill 0.3s;
 }
 
 .address-icon-footer:hover {
@@ -629,6 +663,7 @@ button {
   background-color: var(--color-primary-dark);
   background-image: url('../images/modal-background.png');
   border-radius: 48px;
+  border: 4px solid var(--color-brand-blue);
   overflow-y: auto;
 }
 
@@ -636,6 +671,12 @@ button {
   position: absolute;
   top: 42px;
   right: 42px;
+  padding: 0;
+  fill: rgba(0, 0, 0, 0);
+  stroke: var(--color-brand-white);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
 }
 
 .modal-title {
@@ -705,14 +746,9 @@ button {
 
 .modal-button {
   margin: 0 auto 24px;
+  transition: color 0.3s;
 }
 
 .modal-button:hover {
   color: var(--color-brand-white);
-}
-
-.form-terms {
-  font-size: 12px;
-  color: var(--color-secondary-grey);
-  text-align: center;
 }

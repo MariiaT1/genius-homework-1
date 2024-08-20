@@ -243,12 +243,62 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="contact-form">
-              <p>Запишіться безкоштовно та отримайте подарунок</p>
-              <!--form-->
-              <p class="form-terms">
-                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+            <div class="contact-section-form">
+              <p class="contact-text">
+                Запишіться <span class="accent">безкоштовно</span> <br />та
+                отримайте подарунок
               </p>
+              <!--form-->
+              <form name="contact-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Ваш номер телефону</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                  />
+                </div>
+
+                <button class="modal-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms-link" href="#"
+                    >з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
           </div>
         </div>
@@ -331,15 +381,19 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-modal-button"></use>
+          </svg>
+        </button>
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p class="modal-text">
           Запишіться <span class="accent">безкоштовно</span> <br />та отримайте
           подарунок
         </p>
-        <form name="contact-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off" novalidate>
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -384,7 +438,7 @@
           </button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a href="#">з політикою конфіденційності</a>
+            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
           </p>
         </form>
       </div>
