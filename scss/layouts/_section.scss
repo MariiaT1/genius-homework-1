@@ -1,0 +1,23 @@
+.section {
+  padding: 48px 0;
+}
+
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+}
+
+.section-title .accent {
+  color: var(--color-primary-light);
+}
+
+.section-title .capitalize,
+.text .capitalize {
+  text-transform: capitalize;
+}
+
+.section-title-centered {
+  text-align: center;
+}

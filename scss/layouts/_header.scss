@@ -1,0 +1,54 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 56px;
+}
+
+.header-link {
+  color: var(--color-primary-dark);
+  display: flex;
+  transition: color 0.3s;
+}
+
+.header-link:hover {
+  color: var(--color-primary-light);
+}
+
+.header-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.address-icon {
+  fill: var(--color-brand-blue);
+  transition: fill 0.3s;
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-white);
+}
