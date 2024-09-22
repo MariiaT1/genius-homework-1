@@ -10,30 +10,32 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="/">
               <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
             </a>
-            <ul class="menu">
+            <ul class="header__menu">
               <li>
-                <a class="header-link" href="#about-us-section">Про нас</a>
+                <a class="header__link" href="#about-us-section">Про нас</a>
               </li>
-              <li><a class="header-link" href="#why-we-section">Чому ми</a></li>
               <li>
-                <a class="header-link" href="#procedures-section"
+                <a class="header__link" href="#why-we-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="header__link" href="#procedures-section"
                   >Наші процедури
                 </a>
               </li>
               <li>
-                <a class="header-link" href="#contact-section">Контакти</a>
+                <a class="header__link" href="#contact-section">Контакти</a>
               </li>
             </ul>
-            <ul class="header-icon-list">
+            <ul class="header__icon-list">
               <li>
                 <a href="tel:+380960000007">
-                  <svg width="32" height="32" class="address-icon">
-                    <use href="./images/icons.svg#icon-phone_header"></use>
+                  <svg width="32" height="32" class="header__icon">
+                    <use href="./images/icons.svg#icon-phone-header"></use>
                   </svg>
                 </a>
               </li>
@@ -42,15 +44,15 @@
                   href="https://www.facebook.com/?locale=uk_UA"
                   target="_blank"
                 >
-                  <svg width="32" height="32" class="address-icon">
-                    <use href="./images/icons.svg#icon-facebook_header"></use>
+                  <svg width="32" height="32" class="header__icon">
+                    <use href="./images/icons.svg#icon-facebook-header"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/" target="_blank">
-                  <svg width="32" height="32" class="address-icon">
-                    <use href="./images/icons.svg#icon-instagram_header"></use>
+                  <svg width="32" height="32" class="header__icon">
+                    <use href="./images/icons.svg#icon-instagram-header"></use>
                   </svg>
                 </a>
               </li>
@@ -62,14 +64,22 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-title-container">
-            <p class="hero-section-text">Косметологічна клініка</p>
-            <h1 class="hero-title" lang="en">beauty <br />zone</h1>
-            <div class="button-section">
-              <button class="button modal-btn-open" type="button">
+          <div class="hero-section__container">
+            <p class="hero-section__text">Косметологічна клініка</p>
+            <h1
+              class="hero-section__title text-brand text-capitalize"
+              lang="en"
+            >
+              beauty <br />zone
+            </h1>
+            <div class="hero-section__button-section">
+              <button
+                class="hero-section__button button modal-btn-open"
+                type="button"
+              >
                 Замовити дзвінок
               </button>
-              <p class="hero-section-info">
+              <p class="hero-section__info">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
             </div>
@@ -78,67 +88,74 @@
       </section>
       <section class="about-us-section section" id="about-us-section">
         <div class="container">
-          <div class="about-us-container">
-            <div class="about-us-content">
-              <h2 class="about-us-title section-title">
-                Перевтілюйтесь в
-                <span class="accent capitalize" lang="en">beauty zone!</span>
+          <div class="about-us-section__container">
+            <div class="about-us-section__content">
+              <h2 class="about-us__title section__title">
+                Перевтілюйтесь <br />в
+                <span class="text-brand text-capitalize" lang="en"
+                  >beauty zone!</span
+                >
               </h2>
-              <p>
-                Наша косметологічна клініка пропонує вам професійні послуги з
-                догляду за шкірою обличчя та тіла.
+              <p class="text">
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />з догляду за шкірою обличчя та тіла.
               </p>
               <p class="text">
                 B
-                <span class="capitalize text-bold" lang="en">beauty zone</span>
-                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-                косметологічні процедури та препарати допоможуть вам
-                підтримувати свою красу та молодість. З нами краса назавжди!
+                <span class="text-capitalize text-bold" lang="en"
+                  >beauty zone</span
+                >
+                ми гарантуємо найвищі стандарти якості <br />та приємний сервіс.
+                Наші косметологічні процедури та препарати <br />допоможуть вам
+                підтримувати свою красу та молодість. <br />З нами краса
+                назавжди!
               </p>
             </div>
-            <div class="about-us-images">
-              <div class="about-us-images-transformation-container">
+            <div class="about-us-section__images">
+              <div class="about-us-section__images-transform">
                 <img
-                  class="about-us-image about-us-image-before"
+                  class="about-us-section__img about-us-section__img-before"
                   src="./images/face-before.jpg"
                   alt="Лице до косметологічної процедури"
                 />
                 <svg
-                  class="transformation-star-1 star-animation grow"
+                  class="about-us-section__img-star-1 star-animation"
                   width="64"
                   height="64"
                 >
                   <use href="./images/icons.svg#icon-Star-1"></use>
                 </svg>
                 <svg
-                  class="transformation-star-2 star-animation grow"
+                  class="about-us-section__img-star-2 star-animation"
                   width="40"
                   height="40"
                 >
                   <use href="./images/icons.svg#icon-Star-2"></use>
                 </svg>
                 <svg
-                  class="transformation-star-3 star-animation grow"
+                  class="about-us-section__img-star-3 star-animation"
                   width="16"
                   height="16"
                 >
                   <use href="./images/icons.svg#icon-Star-3"></use>
                 </svg>
               </div>
-              <img
-                class="about-us-image about-us-image-after"
-                src="./images/face-after.jpg"
-                alt="Лице після косметологічної процедури"
-              />
+              <div>
+                <img
+                  class="about-us-section__img about-us-section__img-after"
+                  src="./images/face-after.jpg"
+                  alt="Лице після косметологічної процедури"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="why-we-section section" id="why-we-section">
         <div class="container">
-          <h2 class="why-we-title section-title section-title-centered">
+          <h2 class="why-we-title section__title section__title--centered">
             Чому люди <br />
-            <span class="accent">обирають нас</span>
+            <span class="text-brand">обирають нас</span>
           </h2>
           <ul class="why-we-section-list">
             <li class="why-we-section-item">
@@ -179,8 +196,8 @@
       </section>
       <section class="procedures-section section" id="procedures-section">
         <div class="container">
-          <h2 class="procedures-title section-title section-title-centered">
-            Наші <span class="accent">процедури</span>
+          <h2 class="procedures-title section__title section__title--centered">
+            Наші <span class="text-brand">процедури</span>
           </h2>
           <div class="procedure-container">
             <button class="carousel-button prew" type="button">
@@ -230,8 +247,8 @@
       </section>
       <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title section-title-centered">
-            Як нас <span class="accent">знайти</span>
+          <h2 class="contact-title section__title section__title--centered">
+            Як нас <span class="text-brand">знайти</span>
           </h2>
           <div class="contact-container">
             <iframe

@@ -14,34 +14,32 @@
   background-position: top center;
   background-size: cover;
   padding: 123px 0 127px;
-}
 
-.hero-title-container {
-  padding-left: 180px;
-  padding-top: 16px;
-}
+  &__container {
+    padding-left: 180px;
+    padding-top: 16px;
+  }
 
-.hero-title {
-  color: var(--color-primary-light);
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 140px;
-  line-height: 0.8;
-  text-transform: capitalize;
-  margin-bottom: 40px;
-}
+  &__title {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.8;
+    margin-bottom: 40px;
+  }
 
-.button-section {
-  width: 238px;
-  text-align: center;
-}
+  &__button-section {
+    width: 238px;
+    text-align: center;
+  }
 
-.hero-section-info {
-  color: var(--color-secondary-dark);
-  font-size: 12px;
-  line-height: 1.5;
-}
+  &__info {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    line-height: 1.5;
+  }
 
-.hero-section-text {
-  margin-bottom: 16px;
+  &__text {
+    margin-bottom: 16px;
+  }
 }

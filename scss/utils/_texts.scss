@@ -1,0 +1,16 @@
+.text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.text-brand {
+  color: var(--color-primary-light);
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-bold {
+  font-weight: 600;
+}

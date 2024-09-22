@@ -2,11 +2,14 @@
 @import './utils/variables';
 @import './base';
 @import './utils/utils';
+@import './utils/texts';
 
 @import './components/buttons';
+@import './components/star-animation';
 
 @import './layouts/about-us-section';
 @import './layouts/contact-section';
+@import './layouts/container';
 @import './layouts/footer';
 @import './layouts/header';
 @import './layouts/hero-section';
