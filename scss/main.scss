@@ -5,9 +5,13 @@
 @import './utils/texts';
 
 @import './components/buttons';
+@import './components/carousel-button';
+@import './components/procedure-card';
 @import './components/star-animation';
 
+@import './layouts/section';
 @import './layouts/about-us-section';
+@import './layouts/advantages-section';
 @import './layouts/contact-section';
 @import './layouts/container';
 @import './layouts/footer';
@@ -15,5 +19,3 @@
 @import './layouts/hero-section';
 @import './layouts/modal';
 @import './layouts/procedures-section';
-@import './layouts/section';
-@import './layouts/why-we-section';
