@@ -3,89 +3,89 @@
   padding: 56px 0;
   background-color: var(--color-primary-dark);
   background-image: url('../images/footer-background.png');
-}
 
-.footer::after {
-  position: absolute;
-  width: 247px;
-  height: 152px;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/bottels.png');
-  background-repeat: no-repeat;
-  content: '';
-}
+  &::after {
+    position: absolute;
+    width: 247px;
+    height: 152px;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/bottels.png');
+    background-repeat: no-repeat;
+    content: '';
+  }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0 50px;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 50px;
+  }
 
-.footer-nav,
-.footer-adress {
-  display: flex;
-  /* gap: 20px;
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: var(--color-brand-white);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  // .footer-nav,
+  &__address {
+    display: flex;
+    /* gap: 20px;
   flex-basis: 50%; */
+  }
+
+  &__address-list,
+  &__address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // flex-grow: 1;
+  }
+
+  &__address-link {
+    font-size: 16px;
+    color: var(--color-brand-white);
+    transition: color 0.3s;
+
+    &:hover {
+      /* font-weight: 700; */
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__address-socials {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+  }
+
+  &__address-icon {
+    fill: var(--color-brand-white);
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: var(--color-primary-light);
+    }
+  }
+
+  &__address-copyright {
+    font-size: 13px;
+    color: var(--color-secondary-grey);
+  }
 }
 
 // .footer-logo,
 // .footer-menu {
 //   /* flex-grow: 1; */
 // }
-
-.footer-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-link {
-  font-size: 16px;
-  color: var(--color-brand-white);
-  transition: color 0.3s;
-}
-
-.footer-link:hover {
-  color: var(--color-primary-light);
-}
-
-.footer-adress-list,
-.adress-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  // flex-grow: 1;
-}
-
-.footer__adress-socials {
-  display: flex;
-  gap: 24px;
-  margin-top: 16px;
-}
-
-.address-link {
-  font-size: 16px;
-  color: var(--color-brand-white);
-  transition: color 0.3s;
-}
-
-.address-link:hover {
-  /* font-weight: 700; */
-  color: var(--color-primary-light);
-}
-
-.address-icon-footer {
-  fill: var(--color-brand-white);
-  transition: fill 0.3s;
-}
-
-.address-icon-footer:hover {
-  fill: var(--color-primary-light);
-}
-
-.address-copyright {
-  font-size: 13px;
-  color: var(--color-secondary-grey);
-}
